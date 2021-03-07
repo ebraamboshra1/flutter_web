@@ -79,14 +79,20 @@ class _HomePageState extends State<HomePage> {
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SizedBox(width: mediaQuery.size.width*0.153,),
+                SizedBox(
+                  width: mediaQuery.size.width * 0.163,
+                ),
                 Flexible(
                   flex: 1,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+                      SizedBox(
+                        height: mediaQuery.size.height * 0.06,
+                      ),
                       Row(
                         children: [
                           Text(
@@ -116,6 +122,34 @@ class _HomePageState extends State<HomePage> {
                         "\nWe are always availed to consult on taking your higher \neducation to the next level so you can stay competitive in",
                         style: TextStyle(
                             color: Colors.black.withOpacity(0.7), fontSize: 25),
+                      ),
+                      SizedBox(
+                        height: mediaQuery.size.height * 0.04,
+                      ),
+                      Container(
+                        width: mediaQuery.size.width * 0.1,
+                        decoration: BoxDecoration(
+                            color: Color(0xff717CFF),
+                            borderRadius: BorderRadius.circular(8)),
+                        padding:
+                            EdgeInsets.symmetric(vertical: 8, horizontal: 15),
+                        child: FittedBox(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                "Apply Online ",
+                                style:
+                                    TextStyle(color: Colors.white, fontSize: 20),
+                              ),
+                              Icon(
+                                Icons.arrow_back,
+                                textDirection: TextDirection.rtl,
+                                color: Colors.white,
+                              )
+                            ],
+                          ),
+                        ),
                       )
                     ],
                   ),
@@ -127,13 +161,19 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       Container(
                         height: mediaQuery.size.height * 0.4,
-                        width: mediaQuery.size.width * 0.32,
+                        width: mediaQuery.size.width * 0.33,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.only(topLeft: Radius.circular(1000)),
+                          borderRadius:
+                              BorderRadius.only(topLeft: Radius.circular(1000)),
                           color: Color(0xff717CFF),
                         ),
                       ),
-                      Center(child: Image.asset("assets/girl.png"))
+                      Center(
+                          child: Image.asset(
+                        "assets/girl.png",
+                        width: mediaQuery.size.width * 0.24,
+                        fit: BoxFit.fill,
+                      ))
                     ],
                   ),
                 ),
