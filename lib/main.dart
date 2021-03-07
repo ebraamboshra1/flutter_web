@@ -139,8 +139,8 @@ class _HomePageState extends State<HomePage> {
                             children: [
                               Text(
                                 "Apply Online ",
-                                style:
-                                    TextStyle(color: Colors.white, fontSize: 20),
+                                style: TextStyle(
+                                    color: Colors.white, fontSize: 20),
                               ),
                               Icon(
                                 Icons.arrow_back,
@@ -163,8 +163,9 @@ class _HomePageState extends State<HomePage> {
                         height: mediaQuery.size.height * 0.4,
                         width: mediaQuery.size.width * 0.33,
                         decoration: BoxDecoration(
-                          borderRadius:
-                              BorderRadius.only(topLeft: Radius.circular(1000)),
+                          borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(
+                                  mediaQuery.size.width * 0.33)),
                           color: Color(0xff717CFF),
                         ),
                       ),
